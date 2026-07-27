@@ -37,7 +37,9 @@ public interface RegExUtilityV2 {
 
 	/**
 	 * A US compliant SSN
-	 * reserach what digits are allowed in which locations (some have minimum values)
+	 * Area (first 3 digits): 000 < n < 666 or 900-999
+	 * Group (middle 2 digits): can't be 00
+	 * Serial (last 4 digits): can't be 0000
 	 *
 	 * @param ssn
 	 *
